@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: left;
+
+        }
+
+        h1 {
+            font-family: "Barlow", sans-serif;
+            text-transform: capitalize;
+            font-weight: 700;
+            margin-top: 0;
+            text-align: center;
+            color: #fff;
+        }
+
+
+       /* .pagetitle__heading p {
+            color: #fff;
+        } */
+
+        .pagetitle_desc{
+            color:#fff;
+        }
+
+        .card img {
+            transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+            box-shadow: -80px 60px 15px 5px rgba(0, 0, 0, 0.4);
+            transition: all .4s;
+            transform-style: preserve-3d;
+        }
+
+        .card:hover img {
+            transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
+        }
+
+
+
+        .card1 img {
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-color: rgb(244, 100, 55);
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (min-width: 320px) and (max-width: 767px) {
+            .page-title {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+
+            .page-title-layout1,
+            .page-title-layout3 {
+                padding-bottom: 35px;
+            }
+
+            .page-title {
+                padding-top: 230px;
+                padding-bottom: 150px;
+            }
+
+            .bg-parallax {
+                background-attachment: fixed;
+            }
+
+            .bg-img {
+                position: relative;
+                z-index: 1;
+            }
+
+            .page-title .pagetitle__heading {
+                font-size: 28px !important;
+                line-height: 1.2;
+                margin-bottom: 20px;
+            }
+
+            .pagetitle__heading {
+                color: #ffffff;
+                font-size: 74px;
+                line-height: 1.1;
+            }
+
+            h1 {
+                font-size: 52px;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+               
+                font-family: "Barlow", sans-serif;
+                text-transform: capitalize;
+                font-weight: 700;
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+
+            .h1,
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .pt-80 {
+                padding-top: 40px !important;
+            }
+
+            .pt-80 {
+                padding-top: 80px !important;
+            }
+
+            .text-center {
+                text-align: center !important;
+            }
+        }
+
+        @media (min-width: 320px) and (max-width: 767px) {
+            section {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+
+            section {
+                position: relative;
+                padding-top: 110px;
+                padding-bottom: 110px;
+            }
+
+            article,
+            aside,
+            figcaption,
+            figure,
+            footer,
+            header,
+            hgroup,
+            main,
+            nav,
+            section {
+                display: block;
+            }
+
+            * {
+                outline: none;
+            }
+
+            *,
+            ::after,
+            ::before {
+                box-sizing: border-box;
+            }
+
+            user agent stylesheet section {
+                display: block;
+            }
+        }
+
+
+        .btn1 {
+            display: block;
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: black;
+            border: 2px solid white;
+            background: coral;
+            letter-spacing: 2px;
+            text-align: center;
+            position: relative;
+            transition: all .35s;
+            /* z-index: 2; */
+        }
+
+
+        .btn1:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            /* color:black; */
+            /* background: white;
+            transition: all .35s; */
+        }
+
+        .btn1:hover {
+            color: white;
+            ;
+        }
+
+
+        .btn1:hover:after {
+            width: 100%;
+            color: #fff;
+        }
+
+        section {
+            background-image: url("https://www.businessofapps.com/wp-content/uploads/2019/01/iStock-880805262.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-color: rgb(244, 100, 55);
+        }
+
+
+
+        p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .card-body p {
+            color:black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+<nav class="navbar navbar-expand-lg bg-body-white">
+    <div class="container-fluid">
+        <a class="navbar-brand h1" href="#">
+            <img src="https://www.nsofttek.com/assets/images/logo/Logo.png" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto mb-0 h5  mb-lg-0">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Company
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">About us</a></li>
+                        <li><a class="dropdown-item" href="#">Leadership</a></li>
+
+                    </ul>
+                </li>
+                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link ">Blogs</a>
+                <a class="nav-link">Career</a>
+            </div>
+        </div>
+        <div class="wrapper">
+            <button type="button" class="btn1">Contact Us</button>
+        </div>
+
+    </div>
+</nav>
+
+<section class="page-title pt-80 page-title-layout1 text-center bg-overlay bg-overlay-gradient bg-parallax
+bg-img">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-9 offset-xl-2">
+                <h1 class="pagetitle_heading">Mobile App Development</h1>
+                <p class="pagetitle_desc">
+                    We have been Converting mobile app ideas into digital products for 16+ years.
+                    NSoft technologies is a trusted mobile application development company that thrives on delivering
+                    success to your business with our mobile app development services.
+                    We have worked with startups to established organizations, delivering robust applications that meet
+                    your vision.
+                    Our team of mobile app developers is an expert in iOS, Android, and cross-platform solutions. We are
+                    experts in multiple tech stacks to deliver you a complete end-to-end mobile app development
+                    lifecycle.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<div id="wrapper" class="mt-4 d-flex justify-content-center">
+    <div id="container">
+
+        <h3 class="fw-bolder">Ios app development</h3>
+    </div>
+</div>
+
+
+<div class="card-group mt-5 p-3 ">
+    <div class="card">
+        <img src="https://ecodesoft.com/wp-content/uploads/2020/06/ios.png" height="400" class="card-img-top bg-dark"
+            alt="...">
+        <div class="card-body">
+
+            <p class="card-text">Our team of experienced iOS developers, designers, quality testers, and
+                business analysts brings your idea to one of the most premium platforms, iOS. Whether you want to build
+                for iPhone, iPad, Apple Watch, or Apple TV, we deliver unique, secure, and smart solutions to lead the
+                premium market of iOS.
+            </p>
+
+
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://i.pinimg.com/originals/17/8d/24/178d24ab400ce3266fa44bd3b36ed9ab.png" height="400"
+            class="card-img-top bg-dark" alt="...">
+        <div class="card-body">
+
+            <p class="card-text">In the field of social web, socializing or social media platform everything
+                needs a uniqueness no matter whether it is your content, design, blog or a site. From the start of
+                initial designing until the end of optimization and graphics audience believe to see the attractive and
+                eye catchy things.</p>
+
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://frontdeskhelpers.com/wp-content/uploads/2020/04/ios-app-development-img.png" height="400"
+            class="card-img-top bg-dark" alt="...">
+        <div class="card-body">
+
+            <p class="card-text ">Native Mobile Application Development For iOS Platform
+                Great opportunity to increase market coverage and make interaction with customers better. Custom native
+                iOS app will contribute to the quick growth of your business and fast return of investments spent on its
+                development.
+                iOS Native Mobile Application</p>
+
+        </div>
+    </div>
+</div>
+
+
+<div id="wrapper" class="mt-4 d-flex justify-content-center">
+    <div id="container">
+
+        <h3 class="fw-bolder">Android app development</h3>
+    </div>
+</div>
+
+
+<div class="card-group mt-5 p-3">
+    <div class="card">
+        <img src="https://beebom.com/wp-content/uploads/2021/03/Turn-Any-Website-Into-an-Android-App-shutterstock-website.jpg?w=750&quality=75"
+            height="400" class="card-img-top bg-dark" alt="...">
+        <div class="card-body">
+
+            <p class="card-text ">More than 80% of users are Android worldwide, and we build Android app
+                development solutions for the masses with quality. Our Android development approach caters to the needs
+                of magnificent Android users and delivers them the smooth and smartest user experience.
+
+            </p>
+
+
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://flyuptechnology.com/wp-content/uploads/2022/11/unnamed-17-2.png" height="400"
+            class="card-img-top bg-dark" alt="...">
+        <div class="card-body">
+
+            <p class="card-text">There are multiple apps in the Google Play Store that let you turn
+                third-party websites into native Android apps. We will use three of them for our demo today. The first
+                one, called Hermit, is probably the best-known app in the segment and is also the most feature-rich by
+                far. In addition, we will also use an open-source app called Native Alpha that has to be sideloaded from
+                Github.</p>
+
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://binarymetrix.com/wp-content/uploads/2023/01/mobile-app-development.jpg" height="400"
+            class="card-img-top bg-dark" alt="...">
+        <div class="card-body">
+
+            <p class="card-text">Phones, cars and watches each put your user in a different context or
+                situation. With Google Assistant, you can create delightful user experiences across the Android
+                ecosystem, from glanceable app views to deep linking directly into your app from a voice query.</p>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div id="wrapper" class="mt-4 d-flex justify-content-center">
+    <div id="container">
+
+        <h3 class="fw-bolder">Cross platform app development</h3>
+    </div>
+</div>
+
+
+<div class="card-group mt-5 p-3">
+    <div class="card">
+        <img src="https://www.matellio.com/blog/wp-content/uploads/2018/09/Cross-Development-App-Development.jpg"
+            height="400" class="card-img-top bg-dark" alt="...">
+        <div class="card-body">
+
+            <p class="card-text">Our cross-platform app development solutions function on iOS and Android
+                together without changing the codebase. We deliver you the flexibility & speed you need with the Hybrid
+                app development solution and deliver you a solution that promises you customer engagement and growth.
+
+            </p>
+
+
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://appikr.com/blog/wp-content/uploads/2021/11/1-1.jpg" height="400" class="card-img-top bg-dark"
+            alt="...">
+        <div class="card-body">
+
+            <p class="card-text">Creating your future application on cross-platform technologies can be a
+                winning idea for your project. Cross-platform development is a value-adding tactic since it allows for
+                combining cost-effectiveness with top-notch quality and streamlined coding speed.
+
+                However, the choice of the core tool to build your future app with is essential for getting all these
+                benefits, and that’s why in this article, we will overview cross-platform mobile development frameworks
+                to help you make the right decision. </p>
+
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://codeit.us/storage/DTcHk9DdXAONFjZ18zMBCxjvdkA3u7wQ1qKhbJs1.jpeg" height="400"
+            class="card-img-top bg-dark" alt="...">
+        <div class="card-body">
+
+            <p class="card-text ">Cross-platform mobile app development offer the technological advantage for
+                developers to adhere to a single app and ensure its functionality gets operable across different mobile
+                platforms. Some of the universal programming languages that can be used for this purpose are Javascript
+                for React Native and Dart for Flutter. Businesses mostly prefer using the cross platform development
+                simply for to achieve the mobile apps efficiency and business performance.</p>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>
